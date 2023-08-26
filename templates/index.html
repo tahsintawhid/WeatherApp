@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Analysis</title>
+</head>
+
+<body>
+    <h1>Weather Analysis</h1>
+    <p>Mean Temperature: {{ data['mean_temperature'] }} °F</p>
+    <p>Standard Deviation: {{ data['std_temperature'] }} °F</p>
+    <img src="data:image/png;base64,{{ data['histogram_base64'] }}" alt="Histogram">
+</body>
+
+</html>
